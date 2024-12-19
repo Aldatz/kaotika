@@ -1,0 +1,270 @@
+{
+  "_id": "66a4e701b9f9903f8d8ad2c6",
+  "name": "Oskar Calvo",
+  "nickname": "Mortimer",
+  "email": "vocoder12@gmail.com",
+  "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJXSt_uHvH43jRmzSroP6ZGRm1nT2Z-6AtB8Ww-A3R72oI0TXNx=s96-c",
+  "level": 99,
+  "experience": 173250,
+  "is_active": true,
+  "classroom_id": "hjdhjkashdjk",
+  "profile": {
+    "_id": "string",
+    "name": "Pariah",
+    "image": "/images/profiles/pariah.jpg",
+    "description": "string",
+    "attributes": [],
+    "equipment":{
+      "armors": [],
+      "weapons": [],
+      "artifacts": [],
+      "healing_potions": [],
+      "antidote_potions": [],
+      "enhancer_potions": []
+    }
+  },
+  "attributes": {
+    "intelligence": 30,
+    "dexterity": 50,
+    "constitution": 55,
+    "insanity": 50,
+    "charisma": 30,
+    "strength": 65
+  },
+  "equipment": {
+    "helmet": {
+      "_id": "66a6a4eedfbffe7e650396b6",
+      "name": "Warlord's Aegis",
+      "description": "A helmet worn by the greatest warlords in history.",
+      "type": "helmet",
+      "image": "/images/equipment/uniques/helmets/helmet_4.png",
+      "value": 2600,
+      "defense": 180,
+      "isUnique": true,
+      "isActive": true,
+      "modifiers": {
+          "intelligence": 12,
+          "dexterity": 12,
+          "constitution": 25,
+          "insanity": 12,
+          "charisma": -3,
+          "strength": 35
+      },
+      "min_lvl": 60
+    },
+    "weapon": {
+      "_id": "66a6cc6cdfbffe7e65039706",
+      "name": "Arcane Ripper",
+      "description": "A sword infused with arcane energy, enhancing the wearer's spellcasting abilities.",
+      "type": "weapon",
+      "image": "/images/equipment/uniques/weapons/swords/sword_9.png",
+      "value": 6600,
+      "damage": "4D8+10",
+      "die_faces": 3,
+      "die_modifier": 25,
+      "die_num": 12,
+      "base_percentage": 20,
+      "isUnique": true,
+      "isActive": true,
+      "modifiers": {
+        "intelligence": 20,
+        "dexterity": 5,
+        "constitution": 10,
+        "insanity": 5,
+        "charisma": 10,
+        "strength": 15
+      },
+      "min_lvl": 70,
+      "profiles": []
+    },
+    "armor": {
+      "_id": "668bca105319ea9afdff06f1",
+      "name": "Celestial Armor of the Archmage",
+      "description": "Woven with threads of starlight, this robe grants the wearer unparalleled magical power and wisdom.",
+      "type": "armor",
+      "image": "/images/equipment/uniques/armors/armor_1.png",
+      "value": 10000,
+      "defense": 180,
+      "isUnique": true,
+      "isActive": true,
+      "modifiers": {
+        "intelligence": 50,
+        "dexterity": 50,
+        "constitution": 50,
+        "insanity": 25,
+        "charisma": 50,
+        "strength": 50
+      },
+      "min_lvl": 60,
+      "profiles": []
+    },
+    "shield": {
+      "_id": "66a6a961dfbffe7e650396fb",
+      "name": "Abyssal Protector",
+      "description": "A shield forged in the depths of the abyss, offering dark and powerful protection.",
+      "type": "shield",
+      "image": "/images/equipment/uniques/shields/shield_11.png",
+      "value": 6000,
+      "defense": 500,
+      "isUnique": true,
+      "isActive": true,
+      "modifiers": {
+          "intelligence": 10,
+          "dexterity": 5,
+          "constitution": 55,
+          "insanity": 10,
+          "charisma": 5,
+          "strength": 35
+      },
+      "min_lvl": 60
+    },
+    "artifact": {
+      "_id": "66a902e1b5831810990551dc",
+      "name": "Amulet of the Phoenix's Flight",
+      "description": "An amulet that grants the wearer the ability to move swiftly and evade attacks, inspired by the phoenix's grace.",
+      "type": "artifact",
+      "image": "/images/equipment/artifacts/artifact_12.png",
+      "value": 34000,
+      "isUnique": true,
+      "isActive": true,
+      "modifiers": {
+          "intelligence": 10,
+          "dexterity": 20,
+          "constitution": 10,
+          "insanity": 0,
+          "charisma": 5,
+          "strength": 15
+      },
+      "min_lvl": 70,
+      "profiles": []
+    },
+    "boot": {
+      "_id": "66a6a8b6dfbffe7e650396ee",
+      "name": "Arcane Warrior's Boots",
+      "description": "Boots enchanted with powerful arcane spells, offering both protection and agility.",
+      "type": "boot",
+      "image": "/images/equipment/boots/boot_10.png",
+      "value": 3800,
+      "defense": 190,
+      "isUnique": true,
+      "isActive": true,
+      "modifiers": {
+          "intelligence": 10,
+          "dexterity": 12,
+          "constitution": 30,
+          "insanity": 5,
+          "charisma": 0,
+          "strength": 28
+      },
+      "min_lvl": 60
+    },
+    "ring": {
+      "_id": "66a6d6c8dfbffe7e65039711",
+      "name": "Ring of Shadows",
+      "description": "A ring that cloaks the wearer in shadows, increasing their stealth and agility.",
+      "type": "ring",
+      "image": "/images/equipment/rings/ring_3.png",
+      "value": 14000,
+      "isUnique": true,
+      "isActive": true,
+      "modifiers": {
+          "intelligence": 0,
+          "dexterity": 20,
+          "constitution": 5,
+          "insanity": 10,
+          "charisma": 5,
+          "strength": 10
+      },
+      "min_lvl": 30,
+      "profiles": []
+    },
+    "antidote_potion": {
+      "_id": "668bca125319ea9afdff0764",
+      "name": "Mind's Ease Elixir",
+      "description": "A cooling elixir brewed from the leaves of the Frostmind plant, alleviating migraines and clearing hallucinations.",
+      "type": "antidote",
+      "image": "/images/equipment/potions/antidote/antidote_3.png",
+      "value": 10,
+      "recovery_effect": {
+        "_id": "668bca125319ea9afdff0759",
+        "name": "Essence of Restoration",
+        "description": "The Essence of Restoration is a potent elixir that accelerates healing and revitalizes the body.",
+        "type": "healing",
+        "modifiers": {
+          "hit_points": 70,
+          "intelligence": -15,
+          "dexterity": 0,
+          "constitution": 0,
+          "insanity": 0,
+          "charisma": 0,
+          "strength": 0
+        }
+      },
+      "min_lvl": 20,
+      "profiles": []
+    },
+    "healing_potion": {
+      "_id": "668bca125319ea9afdff0759",
+      "name": "Essence of Restoration",
+      "description": "The Essence of Restoration is a potent elixir that accelerates healing and revitalizes the body.",
+      "type": "healing",
+      "image": "/images/equipment/potions/healing/healing_3.png",
+      "value": 10,
+      "modifiers": {
+        "hit_points": 70,
+        "intelligence": -15,
+        "dexterity": 0,
+        "constitution": 0,
+        "insanity": 0,
+        "charisma": 0,
+        "strength": 0
+      },
+      "min_lvl": 10,
+      "profiles": []
+    },
+    "enhancer_potion": {
+      "_id": "668bca125319ea9afdff0767",
+      "name": "Potion of Increase Strength",
+      "description": "This robust elixir temporarily amplifies the drinker's physical power, significantly boosting muscle strength and stamina.\n\n\n",
+      "type": "enhancer",
+      "image": "/images/equipment/potions/enhancer/enhancer_1.png",
+      "value": 10,
+      "duration": 2,
+      "modifiers": {
+        "intelligence": 0,
+        "dexterity": 0,
+        "constitution": 0,
+        "insanity": 0,
+        "charisma": 0,
+        "strength": 20
+      },
+      "min_lvl": 5,
+      "profiles": []
+    }
+  },
+  "inventory": {
+    "helmets": [
+      ],
+    "weapons": [
+      ],
+    "armors": [
+      ],
+    "shields": [
+      ],
+    "artifacts": [
+      ],
+    "boots": [
+      ],
+    "rings": [
+      ],
+    "antidote_potions": [
+      ],
+    "healing_potions": [
+     ],
+    "enhancer_potions": [
+      ]
+  },
+  "tasks": [],
+  "gold": 72589,
+  "created_date": "2024-07-27T12:24:33.993Z"
+}
