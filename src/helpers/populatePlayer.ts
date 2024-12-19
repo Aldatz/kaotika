@@ -1,5 +1,11 @@
 import { Player } from "@/DB/mongoose/models/models";
-import mongoose from "mongoose";
+import mongoose, { Document } from "mongoose";
+
+// Definir una interfaz para los ingredientes y otros documentos
+interface Ingredient extends Document {
+  _id: mongoose.Types.ObjectId;
+  // Puedes agregar otras propiedades aquí si es necesario
+}
 
 interface Equipment {
   armor: mongoose.Document | null;
@@ -20,8 +26,8 @@ interface Inventory {
   rings: mongoose.Document[];
   armors: mongoose.Document[];
   artifacts: mongoose.Document[];
-  ingredients: { _id: mongoose.Types.ObjectId }[];
-  populate: (path: string, select?: object) => Promise<{ ingredients: mongoose.Document[] }>;
+  ingredients: Ingredient[]; // Aseguramos que ingredientes son del tipo Ingredient
+  populate: (path: string, select?: object) => Promise<void>;
 }
 
 interface PlayerPopulated extends mongoose.Document {
@@ -77,10 +83,17 @@ const updateIngredientsWithQuantity = async (playerPopulated: PlayerPopulated): 
     }
   });
 
-  const { ingredients } = await playerPopulated.inventory.populate('ingredients', { profiles: 0 });
+  // Aquí, estamos usando `populate` correctamente para poblar los ingredientes
+  const { ingredients } = playerPopulated.inventory; // Esto ya está poblado por el `populate`
 
   const ingredientQuantitiesPopulated = ingredientQuantites.map((item) => {
-    const object = ingredients.find((ingredient) => item._id.equals(ingredient._id))!;
+    // Encontramos el ingrediente correspondiente usando `find`
+    const object = ingredients.find((ingredient) => item._id.equals(ingredient._id));
+
+    if (!object) {
+      throw new Error(`Ingredient not found for _id: ${item._id}`);
+    }
+
     return { ...object.toObject(), qty: item.qty };
   });
 
